@@ -114,6 +114,12 @@ select {
 	font: inherit;
 }
 
+ul,
+li {
+	text-decoration: none;
+	list-style: none;
+}
+
 /* ------------------- */
 /* Utility classes     */
 /* ------------------- */
@@ -128,4 +134,9 @@ select {
 	padding-inline: 2em;
 	margin-inline: auto;
 	max-width: 80%;
+}
+
+.li__email,
+.li__map {
+	font-size: 1em;
 }
