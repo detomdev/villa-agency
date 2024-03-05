@@ -26,16 +26,24 @@
 				<div>
 					<ul class="flex">
 						<li>
-							<a href="#"><i class="fa-brands fa-facebook"></i></a>
+							<button href="#" class="social-toggle">
+								<span class="fa-brands fa-facebook social-icon"></span>
+							</button>
 						</li>
 						<li>
-							<a href="#"><i class="fa-brands fa-twitter"></i></a>
+							<button href="#" class="social-toggle">
+								<span class="fa-brands fa-twitter social-icon"></span>
+							</button>
 						</li>
 						<li>
-							<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+							<button href="#" class="social-toggle">
+								<span class="fa-brands fa-linkedin social-icon"></span>
+							</button>
 						</li>
 						<li>
-							<a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+							<button href="#" class="social-toggle">
+								<span class="fa-brands fa-square-instagram social-icon"></span>
+							</button>
 						</li>
 					</ul>
 				</div>
@@ -44,28 +52,30 @@
 			<nav class="main__nav flex">
 				<div>
 					<ul>
-						<li>Villa</li>
+						<li class="comp-logo">Villa</li>
 					</ul>
 				</div>
 				<div>
-					<ul class="flex">
-						<li>Home</li>
+					<ul class="nav__items flex">
+						<li class="home">Home</li>
 						<li>Properties</li>
 						<li>Property Details</li>
 						<li>Contact Us</li>
-						<li><i class="fa-solid fa-calendar"></i>Schedule a visit</li>
+						<li>
+							<button href="#" class="schedule__button"><i class="fa fa-calendar"></i>Schedule a visit</button>
+						</li>
 					</ul>
 				</div>
 			</nav>
 		</header>
-		<main class="container">
+		<main>
 			<section class="hero">
 				<span>Toronto, Canada</span>
 				<h1>Hurry!<br />Get the best villa for you</h1>
 			</section>
 
-			<section class="featured">
-				<img />
+			<section class="featured container">
+				<img src="images/featured.jpg" />
 				<h6>|Featured</h6>
 				<h2>Best Apartment & Sea View</h2>
 				<button>Useful links</button>
@@ -85,21 +95,29 @@
 					<p>250 m2 Total space Contract Contract ready Payment Payment process Safety 24/7 monitoring</p>
 				</aside>
 			</section>
-			<section>
-				<img />
+			<section class="container">
 				<h6>|Video View</h6>
+				<img src="images/video-frame.jpg" />
 				<h2>Get a closer look & Different feeling</h2>
 				<div>34 Completed Buildings 12 Years Experience 24 Awards won</div>
 			</section>
 
-			<section>
+			<section class="container">
 				<h6>|Best Deal</h6>
 				<h2>Find Your Best Deal Right Now!</h2>
-				<button>Apartment</button>
-				<button>Villa</button>
-				<button>Penthouse</button>
-				<aside>
-					Total Flat space 185 m2 Floor number 26th Numbers of rooms 4 Parking available Yes Payment Process Bank
+				<div class="flex">
+					<button class="btn__style">Apartment</button>
+					<button class="btn__style">Villa</button>
+					<button class="btn__style">Penthouse</button>
+				</div>
+				<aside class="info__table">
+					<ul>
+						<li>Total Flat Space <span>185 m2</span></li>
+						<li>Floor number <span>26th</span></li>
+						<li>Number of rooms <span>4</span></li>
+						<li>Parking Available <span>Yes</span></li>
+						<li>Payment Process <span>Bank</span></li>
+					</ul>
 				</aside>
 				<img />
 				<div>
@@ -107,28 +125,31 @@
 					incididunt ut labore et dolore magna aliqua quised ipsum suspendisse. Lorem ipsum dolor sit amet,
 					consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised
 					ipsum suspendisse.
-					<button>Schedule a visit</button>
+					<button class="btn__style">Schedule a visit</button>
 				</div>
 			</section>
-			<section>
+			<section class="container">
 				<h2>|Properties</h2>
 				<h2>We Provide the most sought after Properties</h2>
 				<div>Property cards</div>
 				<div>
 					Luxury Villa$2.264.000 18 New Street Miami, OR 97219 Bedrooms: 8 Bathrooms: 8 Area: 545m2 Floor: 3
 					Parking: 6
-					<button>Schedule a visit</button>
+					<button class="btn__style">Schedule a visit</button>
 				</div>
 			</section>
-			<section>
+			<section class="container">
 				<h6>|Contact us</h6>
 				<h2>Get In Touch With Our Agents</h2>
 				<map></map>
 				<div>phone icon 000-000-0000 email icon info@villa.com</div>
-				<form>place foorm here Full Namme Email Adddress Subbject Messagee <button>Send Message</button></form>
+				<form>
+					place foorm here Full Namme Email Adddress Subbject Messagee
+					<button class="btn__style">Send Message</button>
+				</form>
 			</section>
 		</main>
-		<footer>
+		<footer class="container">
 			<div>Villa</div>
 			<img />
 			<img />
