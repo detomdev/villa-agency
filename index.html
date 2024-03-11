@@ -137,72 +137,81 @@
 				</div>
 			</section>
 
-			<section class="container">
+			<section class="property__section container">
 				<h6>| Properties</h6>
 				<h2>We Provide the most sought after Properties</h2>
-				<div>Property cards</div>
-				<div>
-					Luxury Villa$2.264.000 18 New Street Miami, OR 97219 Bedrooms: 8 Bathrooms: 8 Area: 545m2 Floor: 3
-					Parking: 6
-					<button href="#" class="btn__schedule"><i class="fa fa-calendar"></i>Schedule a visit</button>
+				<div class="property__cards">
+					<div class="card">
+						<img src="images/property-01.jpg" />
+						<div class="card__flag">Luxury Villa</div>
+						<h6 class="card__price">$2.264.000></h6>
+						<div class="card__title">18 New Street Miami, OR 97219</div>
+						<div class="card__description">Bedrooms: 8 Bathrooms: 8 Area: 545m2 Floor: 3 Parking: 6</div>
+						<button href="#" class="btn__schedule"><i class="fa fa-calendar"></i>Schedule a visit</button>
+					</div>
 				</div>
 			</section>
 
-			<section class="contact-content container">
-				<h6>| Contact us</h6>
-				<h2>Get In Touch With Our Agents</h2>
-				<div class="google-map">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14351.107544843828!2d-80.13252263928365!3d25.942549735816613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9ace0f4fb6051%3A0x83ad83c3f213ec3a!2sSunny%20Isles%20Beach%20Government%20Center!5e0!3m2!1sen!2sus!4v1710168744928!5m2!1sen!2sus"
-						width="600"
-						height="450"
-						style="border: 0"
-						allowfullscreen=""
-						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"
-					></iframe>
-				</div>
-				<div class="icon-container flex">
-					<div class="item phone flex">
-						<img src="images/phone-icon.png" />
-						<h4>000-000-0000</h4>
-					</div>
-
-					<div class="item email flex">
-						<img src="images/email-icon.png" />
-						<h4>info@villa.com</h4>
-					</div>
+			<section class="contact-section">
+				<div class="image-container flex">
+					<h6 class="section__subhead">| Contact us</h6>
+					<h2>Get In Touch With Our Agents</h2>
 				</div>
 
-				<form class="flex" id="contact-form" action="" method="post">
-					<fieldset>
-						<label for="name">Full Name</label>
-						<input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required />
-					</fieldset>
+				<div class="contact__content container">
+					<div class="google-map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14351.107544843828!2d-80.13252263928365!3d25.942549735816613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9ace0f4fb6051%3A0x83ad83c3f213ec3a!2sSunny%20Isles%20Beach%20Government%20Center!5e0!3m2!1sen!2sus!4v1710168744928!5m2!1sen!2sus"
+							width="600"
+							height="450"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+					<div class="icon-container flex">
+						<div class="item phone flex">
+							<img src="images/phone-icon.png" />
+							<h4>000-000-0000</h4>
+						</div>
 
-					<fieldset>
-						<label for="email">Email Address</label>
-						<input
-							type="text"
-							name="email"
-							id="email"
-							pattern="[^ @]*@[^ @]*"
-							placeholder="Your E-mail..."
-							required=""
-						/>
-					</fieldset>
+						<div class="item email flex">
+							<img src="images/email-icon.png" />
+							<h4>info@villa.com</h4>
+						</div>
+					</div>
 
-					<fieldset>
-						<label for="subject">Subject</label>
-						<input type="subject" name="subject" id="subject" placeholder="Subject..." autocomplete="on" />
-					</fieldset>
+					<form class="flex" id="contact-form" action="" method="post">
+						<fieldset>
+							<label for="name">Full Name</label>
+							<input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required />
+						</fieldset>
 
-					<fieldset>
-						<label for="message">Message</label>
-						<textarea name="message" id="message" placeholder="Your Message"></textarea>
-					</fieldset>
-					<button class="btn__general">Send Message</button>
-				</form>
+						<fieldset>
+							<label for="email">Email Address</label>
+							<input
+								type="text"
+								name="email"
+								id="email"
+								pattern="[^ @]*@[^ @]*"
+								placeholder="Your E-mail..."
+								required=""
+							/>
+						</fieldset>
+
+						<fieldset>
+							<label for="subject">Subject</label>
+							<input type="subject" name="subject" id="subject" placeholder="Subject..." autocomplete="on" />
+						</fieldset>
+
+						<fieldset>
+							<label for="message">Message</label>
+							<textarea name="message" id="message" placeholder="Your Message"></textarea>
+						</fieldset>
+						<button class="btn__general">Send Message</button>
+					</form>
+				</div>
 			</section>
 		</main>
 
