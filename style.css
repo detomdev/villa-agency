@@ -4,9 +4,8 @@
 
 :root {
 	/* colors */
-	--clr-dark: #000814;
-	--clr-light: rgb(234, 81, 73);
-	--clr-pale: rgb(244, 202, 200);
+	--clr-light: rgb(237, 75, 39);
+	--clr-pale: rgb(247, 187, 174);
 	--clr-white: 0 0% 100%;
 	--clr-blue: #023047;
 	--clr-light-blue: #8ecae6;
@@ -69,7 +68,7 @@ p {
 body {
 	font-family: var(--ff-sans-normal);
 	font-size: var(--fs-400);
-	color: hsl(var(--clr-dark));
+	color: hsl(var(--clr-rich-black));
 	background-color: hsl(var(--clr-white));
 	line-height: 1.5;
 	min-height: 100vh;
@@ -153,7 +152,7 @@ h8 {
 	padding: 0.6em 1rem;
 	border-radius: 2rem;
 	border: none;
-	background: var(--clr-dark);
+	background: var(--clr-rich-black);
 	color: white;
 	font-size: var(--fs-200);
 	text-align: center;
@@ -168,7 +167,7 @@ h8 {
 	padding: 0.5em 1.5rem 0.5em 3rem;
 	border-radius: 2rem;
 	border: none;
-	background: var(--clr-dark);
+	background: var(--clr-rich-black);
 	color: white;
 	margin-left: 1em;
 	font-size: var(--fs-200);
@@ -231,7 +230,7 @@ h8 {
 	font-size: var(--fs-700);
 	letter-spacing: 2px;
 	font-weight: 700;
-	color: var(--clr-dark);
+	color: var(--clr-rich-black);
 }
 
 .home {
@@ -327,7 +326,7 @@ section {
 	border-radius: 50%;
 	position: absolute;
 	left: -25px;
-	top: -25px;
+	bottom: 12px;
 }
 
 /* Property Section */
@@ -419,14 +418,14 @@ section {
 .info__table ul li span {
 	font-size: var(--fs-300);
 	font-weight: 700;
-	color: var(--clr-dark);
+	color: var(--clr-rich-black);
 	margin-left: 5rem;
 }
 
 .best__deal p {
 	margin: 1em 0;
 	line-height: 1.5;
-	color: var(--clr-dark);
+	color: var(--clr-rich-black);
 	text-align: left;
 }
 
@@ -559,7 +558,7 @@ fieldset {
 
 /* Footer section */
 .footer__section {
-	background-color: var(--rich-black);
+	background-color: var(--clr-rich-black);
 	text-align: center;
 	color: white;
 	padding: 2em;
