@@ -5,13 +5,12 @@
 :root {
 	/* colors */
 	--clr-dark: #000814;
-	--clr-light: #ee626b;
+	--clr-light: rgb(234, 81, 73);
+	--clr-pale: rgb(244, 202, 200);
 	--clr-white: 0 0% 100%;
 	--clr-blue: #023047;
 	--clr-light-blue: #8ecae6;
 	--clr-rich-gray: rgb(244, 241, 241);
-
-	/* CSS HSL */
 	--clr-rich-black: hsla(216, 100%, 4%, 1);
 
 	/* font-sizes */
@@ -126,6 +125,13 @@ h6 {
 	letter-spacing: 1px;
 	line-height: 1;
 	margin-bottom: 1.5em;
+}
+
+h8 {
+	text-align: left;
+	font-size: var(--fs-500);
+	font-weight: 600;
+	line-height: 2;
 }
 
 .flex {
@@ -255,9 +261,76 @@ section {
 .featured > img {
 	margin: 0 auto;
 }
+/* Video Section */
+.video__section .image-container {
+	background-image: url("images/video-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 5vh 0;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.video__section .image-container .video-frame {
+	margin: 0 2em;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+	position: relative;
+}
+
+.video__section .video-frame a {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-26px, -26px);
+	width: 52px;
+	height: 52px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 52px;
+	color: var(--clr-light);
+	outline: 15px solid rgba(234, 81, 73, 0.5);
+	font-size: 18px;
+}
+
+.video__section .image-container img {
+	border-radius: 10px;
+}
+
+.video__section h2 {
+	color: #fff;
+}
+
+.facts__container .fact {
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+	padding: 0.5rem 10px;
+	background-color: var(--clr-pale);
+	padding: 1.5em;
+	margin-bottom: 4em;
+	justify-content: center;
+	position: relative;
+}
+
+.facts__container .fact span {
+	font-size: var(--fs-600);
+	color: #fff;
+	background-color: var(--clr-light);
+	width: 4rem;
+	height: 4rem;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	position: absolute;
+	left: -25px;
+	top: -25px;
+}
 
 /* Property Section */
-
 .property__cards .card {
 	background-color: var(--clr-rich-gray);
 	border-radius: 0.5em;
@@ -344,7 +417,7 @@ section {
 }
 
 .info__table ul li span {
-	font-size: var(--fs-400);
+	font-size: var(--fs-300);
 	font-weight: 700;
 	color: var(--clr-dark);
 	margin-left: 5rem;
@@ -363,6 +436,10 @@ section {
 
 .best__deal button {
 	margin: 2em 0;
+}
+
+.best__deal button:first-child {
+	background-color: var(--clr-light);
 }
 
 /* Contact section */
