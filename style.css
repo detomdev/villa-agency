@@ -258,7 +258,14 @@ section {
 
 /* Featured section */
 .featured > img {
-	margin: 0 auto;
+	margin: 0 auto 2em auto;
+}
+
+.featured p {
+	margin: 1em 0;
+	line-height: 1.5;
+	color: var(--clr-rich-black);
+	text-align: left;
 }
 /* Video Section */
 .video__section .image-container {
