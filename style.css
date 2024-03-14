@@ -9,7 +9,8 @@
 	--clr-white: 0 0% 100%;
 	--clr-blue: #023047;
 	--clr-light-blue: #8ecae6;
-	--clr-rich-gray: rgb(244, 241, 241);
+	--clr-rich-gray: rgb(236, 229, 229);
+	--clr-text-gray: rgb(129, 130, 132);
 	--clr-rich-black: hsla(216, 100%, 4%, 1);
 
 	/* font-sizes */
@@ -253,12 +254,24 @@ section {
 	background-image: url(images/banner-01.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 25% 0;
+	background-position: center center;
+	padding: 50vh 0;
 }
 
 /* Featured section */
-.featured > img {
-	margin: 0 auto 2em auto;
+
+.feature-icon {
+	color: #fff;
+	background-color: var(--clr-light);
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	left: -50px;
+	bottom: 50px;
+	padding-left: 0.5em;
 }
 
 .featured p {
@@ -268,42 +281,34 @@ section {
 	text-align: left;
 }
 
-.featured__table {
+.featured__container {
 	border-radius: 10px;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-	padding: 2rem;
-	margin: 2rem auto;
-	max-width: 363px;
+	padding: 1.5em 1em;
+	margin-top: 2em;
+	margin-bottom: 4em;
 }
 
-.featured__table ul {
-	padding-left: 0;
-	color: var(--clr-rich-black);
+.feature span {
+	font-size: var(--fs-500);
+	font-weight: 600;
 }
 
-.featured__table ul li {
+.feature h8 {
+	color: var(--clr-text-gray);
+	font-size: var(--fs-400);
+}
+
+.feature {
 	margin-bottom: 24px;
 	padding-bottom: 24px;
 	border-bottom: 1px solid var(--clr-rich-gray);
-	text-align: left;
-	font-size: var(--fs-200);
-	font-weight: 400;
-	color: inherit;
-	/* display: flex;
-	justify-content: space-between; */
 }
 
-.featured__table ul li:last-child {
+.feature:last-child {
 	border-bottom: none;
 	padding-bottom: 0;
 	margin-bottom: 0;
-}
-
-.featured__table ul li span {
-	font-size: var(--fs-300);
-	font-weight: 700;
-	color: inherit;
-	margin-left: 5rem;
 }
 
 /* Video Section */
@@ -438,6 +443,7 @@ section {
 	padding: 2rem;
 	margin: 2rem auto;
 	max-width: 363px;
+	background-color: #fff;
 }
 
 .info__table ul {
@@ -451,7 +457,7 @@ section {
 	text-align: left;
 	font-size: var(--fs-200);
 	font-weight: 400;
-	color: var(--clr-rich-black);
+	color: var(--clr-text-gray);
 	display: flex;
 	justify-content: space-between;
 }
