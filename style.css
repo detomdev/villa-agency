@@ -15,7 +15,7 @@
 
 	/* font-sizes */
 	--fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
-	--fs-800: 3.5rem;
+	--fs-800: 3.25rem;
 	--fs-700: 1.75rem;
 	--fs-600: 1.5rem;
 	--fs-500: 1.25rem;
@@ -248,18 +248,47 @@ section {
 	margin-bottom: 5rem;
 }
 
+/* Nav section */
+.main__nav {
+	margin: 0;
+}
+
 /* Hero section */
 .hero {
-	width: 100%;
 	background-image: url(images/banner-01.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	padding: 50vh 0;
+	padding: 13.75rem 20% 20rem 20%;
+}
+
+.hero span {
+	background-color: #fff;
+	color: #1e1e1e;
+	font-size: 1em;
+	font-weight: 500;
+	text-transform: capitalize;
+	padding: 0.375rem 0.938rem;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.hero span em {
+	font-style: normal;
+	color: #f35525;
+}
+
+h1 {
+	font-size: var(--fs-800);
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 62px;
+	/* width: 70%; */
+	margin-bottom: 0px;
 }
 
 /* Featured section */
-
 .feature-icon {
 	color: #fff;
 	background-color: var(--clr-light);
@@ -618,8 +647,12 @@ fieldset {
 }
 
 .footer__section,
-.comp-logo {
+.comp-logo-white {
 	color: white;
+	font-size: var(--fs-700);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
 }
 
 .footer__section > ul,
