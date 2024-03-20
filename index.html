@@ -51,21 +51,22 @@
 
 			<nav class="main__nav flex">
 				<div>
-					<ul>
-						<li class="comp-logo">Villa</li>
-					</ul>
+					<a class="comp-logo" href="#">Villa</a>
+					<button class="nav-toggle" aria-label="open navigation">
+						<span class="hamburger"></span>
+					</button>
 				</div>
-				<div>
-					<ul class="nav__items flex">
-						<li class="home">Home</li>
-						<li>Properties</li>
-						<li>Property Details</li>
-						<li>Contact Us</li>
+				<nav class="nav">
+					<ul class="nav__list flex">
+						<li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+						<li class="nav__item">Properties</li>
+						<li class="nav__item">Property Details</li>
+						<li class="nav__item">Contact Us</li>
 						<li>
 							<button href="#" class="btn__schedule"><i class="fa fa-calendar"></i>Schedule a visit</button>
 						</li>
 					</ul>
-				</div>
+				</nav>
 			</nav>
 		</header>
 
@@ -374,5 +375,6 @@
 			</ul>
 			<p>Copyright 2024 Villa Inc. <br />All rights reserved.</p>
 		</footer>
+		<script src="main.js"></script>
 	</body>
 </html>

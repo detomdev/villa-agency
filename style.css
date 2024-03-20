@@ -190,25 +190,23 @@ h8 {
 
 .li__email,
 .li__map {
-	font-size: 1em;
-	color: var(--rich-gray);
+	font-size: 0.75em;
+	color: var(--clr-text-grayrich-gray);
 }
+
 .fa-envelope,
 .fa-map {
 	color: var(--clr-light);
 	margin-right: 1em;
-}
-
-.subheader__container,
-.main__nav {
-	justify-content: space-between;
-	align-items: center;
+	font-size: 1em;
 }
 
 .subheader__container {
+	justify-content: space-between;
+	align-items: center;
 	display: none;
 	padding: 0.625rem 0;
-	border-bottom: 1px solid var(--rich-gray);
+	border-bottom: 1px solid var(--clr-rich-gray);
 }
 
 .social-toggle {
@@ -222,26 +220,8 @@ h8 {
 	color: white;
 }
 
-.main__nav {
-	padding: 2em 0;
-}
-
-.comp-logo {
-	text-transform: uppercase;
-	font-size: var(--fs-700);
-	letter-spacing: 2px;
-	font-weight: 700;
-	color: var(--clr-rich-black);
-}
-
 .home {
 	color: var(--clr-light);
-}
-
-.nav__items {
-	display: none;
-	align-items: center;
-	gap: 1.5rem;
 }
 
 section {
@@ -249,8 +229,87 @@ section {
 }
 
 /* Nav section */
+.nav {
+	visibility: hidden;
+	height: 0;
+}
+
 .main__nav {
-	margin: 0;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2em;
+}
+
+.nav__list {
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.main__nav .btn__schedule {
+	display: none;
+}
+
+.nav--visible {
+	visibility: visible;
+	height: auto;
+	position: relative;
+}
+
+.comp-logo {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: var(--fs-700);
+	letter-spacing: 2px;
+	font-weight: 700;
+	color: var(--clr-rich-black);
+}
+
+/* Mobile navigation */
+.nav-toggle {
+	cursor: pointer;
+	border: 0;
+	width: 2.5em;
+	height: 2.5em;
+	padding: 0em;
+	border-radius: 50%;
+	background: var(--clr-light);
+	color: white;
+	transition: opacity 250ms ease;
+	position: absolute;
+	right: 2em;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+	opacity: 0.75;
+}
+
+.hamburger {
+	width: 50%;
+	position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+	display: block;
+	margin: 0 auto;
+	height: 3px;
+	background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+	content: "";
+	width: 100%;
+}
+
+.hamburger::before {
+	transform: translateY(-6px);
+}
+
+.hamburger::after {
+	transform: translateY(3px);
 }
 
 /* Hero section */
