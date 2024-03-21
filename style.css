@@ -142,7 +142,8 @@ h8 {
 .container {
 	padding: 4em;
 	margin: 0 auto;
-	max-width: 90%;
+	width: 90%;
+	max-width: 90rem;
 }
 
 /* Button style */
@@ -170,7 +171,7 @@ h8 {
 	border: none;
 	background: var(--clr-rich-black);
 	color: white;
-	margin-left: 1em;
+	/* margin-left: 1em; */
 	font-size: var(--fs-200);
 	position: relative;
 }
@@ -229,9 +230,10 @@ section {
 }
 
 /* Nav section */
-.nav {
+.nav--primary {
 	visibility: hidden;
 	height: 0;
+	/* padding: 0.5em 0; */
 }
 
 .main__nav {
@@ -241,12 +243,20 @@ section {
 }
 
 .nav__list {
-	align-items: center;
+	font-weight: 400;
+	padding: 2em;
 	gap: 1.5rem;
+	background-color: var(--clr-rich-gray);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+	flex-direction: column;
+	align-items: center;
 }
 
-.main__nav .btn__schedule {
-	display: none;
+.nav__item,
+a {
+	color: var(--clr-rich-black);
+	text-decoration: none;
 }
 
 .nav--visible {
