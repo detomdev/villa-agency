@@ -7,9 +7,9 @@
 	--clr-light: rgb(237, 75, 39);
 	--clr-pale: rgb(247, 187, 174);
 	--clr-white: 0 0% 100%;
-	--clr-blue: #023047;
-	--clr-light-blue: #8ecae6;
-	--clr-rich-gray: rgb(236, 229, 229);
+	/* --clr-blue: #023047;
+	--clr-light-blue: #8ecae6; */
+	--clr-rich-gray: rgb(230, 230, 230);
 	--clr-text-gray: rgb(129, 130, 132);
 	--clr-rich-black: hsla(216, 100%, 4%, 1);
 
@@ -25,6 +25,9 @@
 
 	/* font-families */
 	--ff-sans-normal: "Poppins", sans-serif;
+
+	/* Shadow */
+	--shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* ------------------- */
@@ -142,7 +145,14 @@ h8 {
 .container {
 	padding: 4em;
 	margin: 0 auto;
-	width: 90%;
+	width: 100%;
+}
+
+.featured,
+.facts__container,
+.best-deal,
+.property__section,
+.contact__content {
 	max-width: 90rem;
 }
 
@@ -247,10 +257,10 @@ section {
 	padding: 2em;
 	gap: 1.5rem;
 	background-color: var(--clr-rich-gray);
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+	box-shadow: var(--shadow);
 
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .nav__item,
@@ -259,9 +269,15 @@ a {
 	text-decoration: none;
 }
 
+.nav__item,
+a:hover {
+	color: var(--clr-light);
+	text-decoration: none;
+}
+
 .nav--visible {
 	visibility: visible;
-	height: auto;
+	/* height: auto; */
 	position: relative;
 }
 
@@ -381,7 +397,7 @@ h1 {
 
 .featured__container {
 	border-radius: 10px;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+	box-shadow: var(--shadow);
 	padding: 1.5em 1em;
 	margin-top: 2em;
 	margin-bottom: 4em;
@@ -424,7 +440,7 @@ h1 {
 
 .video__section .image-container .video-frame {
 	margin: 0 2em;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+	box-shadow: var(--shadow);
 	position: relative;
 }
 
@@ -455,7 +471,7 @@ h1 {
 
 .facts__container .fact {
 	border-radius: 10px;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+	box-shadow: var(--shadow);
 	padding: 0.5rem 10px;
 	background-color: var(--clr-pale);
 	padding: 1.5em;
@@ -537,7 +553,7 @@ h1 {
 
 .info__table {
 	border-radius: 10px;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+	box-shadow: var(--shadow);
 	padding: 2rem;
 	margin: 2rem auto;
 	max-width: 363px;
@@ -656,7 +672,7 @@ fieldset {
 
 .contact__content .item {
 	border-radius: 10px;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+	box-shadow: var(--shadow);
 	padding: 0.5rem 10px;
 	background-color: #fff;
 	align-items: center;
@@ -671,7 +687,7 @@ fieldset {
 .contact__content #contact-form {
 	margin: 0 auto;
 	border-radius: 10px;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+	box-shadow: var(--shadow);
 	padding: 2rem 1.875rem;
 	background-color: #fff;
 	flex-direction: column;
