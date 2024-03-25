@@ -49,13 +49,13 @@
 				</div>
 			</div>
 
-			<nav class="main__nav">
-				<div class="flex">
+			<nav>
+				<div class="main__nav flex">
 					<a class="comp-logo" href="#">Villa</a>
 					<button class="nav-toggle" aria-label="open navigation">
 						<span class="hamburger"></span>
 					</button>
-					<nav class="nav--primary">
+					<nav class="nav">
 						<ul class="nav__list flex">
 							<li class="nav__item"><a href="#" class="nav__link">Home</a></li>
 							<li class="nav__item"><a href="#" class="nav__link">Properties</a></li>
@@ -79,55 +79,60 @@
 			<section class="featured container">
 				<h6>| Featured</h6>
 				<h2>Best Apartment & Ocean View</h2>
-				<img class="feature-image" src="images/featured.jpg" />
+				<div class="feature__wrapper flex">
+					<img class="feature--image" src="images/featured.jpg" />
 
-				<div class="feature-icon flex"><img src="images/featured-icon.png" /></div>
-
-				<button class="btn__general">Useful links</button>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolor quaerat sint eligendi harum
-				</p>
-				<button class="btn__general">How does this work?</button>
-				<p>
-					Cumque, veniam qui unde officiis totam est, dicta, aliquam labore? Laborum vitae veritatis distinctio
-					illum. Sequi?
-				</p>
-				<button class="btn__general">Why is Villa the best?</button>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolor quaerat sint eligendi harum
-				</p>
-				<aside>
-					<div class="featured__container">
-						<div class="feature flex">
-							<img src="images/info-icon-01.png" />
-							<div>
-								<span class="flex">250 m2</span>
-								<h8>Total Flat Space</h8>
-							</div>
-						</div>
-						<div class="feature flex">
-							<img src="images/info-icon-02.png" />
-							<div>
-								<span class="flex">Contract</span>
-								<h8>Contract ready</h8>
-							</div>
-						</div>
-						<div class="feature flex">
-							<img src="images/info-icon-03.png" />
-							<div>
-								<span class="flex">Payment</span>
-								<h8>Payment Process</h8>
-							</div>
-						</div>
-						<div class="feature flex">
-							<img src="images/info-icon-04.png" />
-							<div>
-								<span class="flex">Safety</span>
-								<h8>24/7 Security</h8>
-							</div>
-						</div>
+					<div class="feature--icon flex"><img src="images/featured-icon.png" />
 					</div>
-				</aside>
+
+					<div class="btn__wrapper">
+						<button class="btn__general">Useful links</button>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolor quaerat sint eligendi harum
+						</p>
+						<button class="btn__general">How does this work?</button>
+						<p>
+							Cumque, veniam qui unde officiis totam est, dicta, aliquam labore? Laborum vitae veritatis distinctio
+							illum. Sequi?
+						</p>
+						<button class="btn__general">Why is Villa the best?</button>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolor quaerat sint eligendi harum
+						</p>
+					</div>
+				</div>
+					<aside class="flex">
+						<div class="featured__detail flex">
+							<div class="feature flex">
+								<img src="images/info-icon-01.png" />
+								<div>
+									<span class="flex">250 m2</span>
+									<h8>Total Flat Space</h8>
+								</div>
+							</div>
+							<div class="feature flex">
+								<img src="images/info-icon-02.png" />
+								<div>
+									<span class="flex">Contract</span>
+									<h8>Contract ready</h8>
+								</div>
+							</div>
+							<div class="feature flex">
+								<img src="images/info-icon-03.png" />
+								<div>
+									<span class="flex">Payment</span>
+									<h8>Payment Process</h8>
+								</div>
+							</div>
+							<div class="feature flex">
+								<img src="images/info-icon-04.png" />
+								<div>
+									<span class="flex">Safety</span>
+									<h8>24/7 Security</h8>
+								</div>
+							</div>
+					</aside>
+				</div>
 			</section>
 
 			<section class="video__section">
@@ -140,8 +145,8 @@
 					</div>
 				</div>
 
-				<div class="container">
-					<div class="facts__container">
+				<div class="container flex">
+					<div class="facts__container flex">
 						<div class="fact flex">
 							<span class="flex">34</span>
 							<h8>Completed Buildings</h8>
