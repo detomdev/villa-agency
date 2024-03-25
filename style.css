@@ -398,6 +398,8 @@ h1 {
 }
 
 .featured__detail {
+	width: 100%;
+	flex-direction: column;
 	border-radius: 10px;
 	box-shadow: var(--shadow);
 	padding: 1.5em 1em;
@@ -808,6 +810,7 @@ p {
 		justify-content: center;
 		margin: 0 auto;
 	}
+
 	.feature__wrapper {
 		flex-direction: row;
 		position: relative;
@@ -894,4 +897,53 @@ p {
 		left: -30px;
 		bottom: 25px;
 	}
+
+	/* Best deal section */
+	.best__deal h4 {
+		margin-bottom: 1em;
+	}
+
+	.deal__btn-container {
+		justify-content: center;
+	}
+
+	.deal__container {
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.deal__image {
+		width: 55%;
+	}
+
+	aside .info__table {
+		width: 40%;
+		margin-top: 0;
+	}
+
+	.info__table ul li {
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+	}
+
+	.details__container {
+		justify-content: space-between;
+	}
+
+	.details-one {
+		width: 46%;
+	}
+
+	.details-two {
+		width: 46%;
+	}
+
+	/* Property section */
+	.property__cards {
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	/* Contact section */
 }
