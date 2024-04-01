@@ -393,7 +393,7 @@ h1 {
 	align-items: center;
 	position: absolute;
 	left: 4%;
-	bottom: -120%;
+	bottom: -100%;
 	padding-left: 0.5em;
 }
 
@@ -924,7 +924,7 @@ fieldset {
 		border-radius: 50%;
 		/* position: absolute; */
 		left: 20px;
-		bottom: -59rem;
+		bottom: -53rem;
 	}
 
 	.btn__wrapper {
@@ -1034,7 +1034,7 @@ fieldset {
 	}
 
 	.details__container {
-		flex-direction: row;
+		flex-direction: column;
 	}
 
 	.details__container h4 {
@@ -1148,7 +1148,7 @@ fieldset {
 
 	.feature__icon {
 		left: 20px;
-		bottom: -63rem;
+		bottom: -56rem;
 	}
 
 	.btn__wrapper {
