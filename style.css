@@ -1187,8 +1187,8 @@ fieldset {
 	}
 
 	.info__table ul li {
-		margin-bottom: 2rem;
-		padding-bottom: 1.1rem;
+		margin-bottom: 2.25rem;
+		padding-bottom: 2rem;
 	}
 
 	.details__container {
@@ -1206,11 +1206,12 @@ fieldset {
 
 	.details__p {
 		flex-direction: column;
+		border: 1px solid red;
 	}
 
 	.details-one,
 	.details-two {
-		width: 210px;
+		width: 290px;
 	}
 }
 /* for-phone-only {
