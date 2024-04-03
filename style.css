@@ -1065,10 +1065,10 @@ fieldset {
 		padding: 0;
 	}
 
-	/* .details-two {
+	.details-two {
 		width: 46%;
 		padding: 0;
-	} */
+	}
 
 	/* Property section */
 	.property__cards {
@@ -1207,7 +1207,6 @@ fieldset {
 
 	.details__p {
 		flex-direction: column;
-		border: 1px solid red;
 	}
 
 	.details-one,
