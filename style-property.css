@@ -366,6 +366,7 @@ h2 {
 }
 
 .property__wrapper img {
+	width: 100%;
 	margin-bottom: 2em;
 }
 
@@ -374,7 +375,7 @@ h2 {
 	align-items: flex-start;
 }
 
- .property__flag {
+.property__flag {
 	background-color: var(--clr-light);
 	color: #fff;
 	font-weight: 500;
@@ -412,9 +413,14 @@ h2 {
 	flex-direction: column;
 	border-radius: 10px;
 	box-shadow: var(--shadow);
-	padding: 1.5em 1em;
+	padding: 2em;
 	margin-top: 2em;
 	margin-bottom: 4em;
+}
+
+.highlight img {
+	width: 52px;
+	height: 52px;
 }
 
 .highlight {
@@ -588,7 +594,7 @@ h2 {
 	}
 
 	/* Property section */
-	.property__cards {
+	.property__wrapper {
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
@@ -638,11 +644,6 @@ h2 {
 		line-height: 1;
 	}
 
-	.highlight img {
-		width: 52px;
-		height: 52px;
-	}
-
 	/* Footer section */
 
 	.footer__section {
@@ -675,7 +676,59 @@ h2 {
 }
 
 @media (min-width: 1200px) {
-    .property__section{
-        flex
-    }
+	.property__wrapper {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	.property__wrapper img {
+		width: 40%;
+		margin-right: 2cqb;
+		margin-bottom: 2em;
+	}
+
+	.property-description {
+		width: 25%;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-right: 2em;
+	}
+
+	.property-description .btn__schedule {
+		margin: 2em auto;
+	}
+
+	.highlight__detail {
+		width: 100%;
+		flex-direction: column;
+		margin-top: 0;
+	}
+
+	.highlight {
+		margin-bottom: 24px;
+		padding-bottom: 24px;
+		border-bottom: 1px solid var(--clr-rich-gray);
+	}
+
+	.highlight:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.details__p {
+		flex-direction: column;
+	}
+
+	.details-one {
+		width: 100%;
+	}
+
+	.details-two {
+		width: 100%;
+	}
+
+	.best__deal button:first-child {
+		background-color: var(--clr-light);
+	}
 }
