@@ -244,7 +244,7 @@ section {
 .main__nav-container {
 	margin-top: -3rem;
 	align-items: center;
-	padding: 2em;
+	padding: 2em 4em;
 }
 
 .nav {
@@ -860,6 +860,8 @@ fieldset {
 		justify-content: space-between;
 		align-items: center;
 		padding: 0.625rem 0;
+		padding-left: 1.5em;
+
 		visibility: visible;
 	}
 
@@ -881,6 +883,7 @@ fieldset {
 
 	.main__nav-container {
 		margin-top: 0;
+		/* padding: ; */
 	}
 
 	.nav {
@@ -1153,6 +1156,13 @@ fieldset {
 }
 
 @media (min-width: 1200px) {
+	.subheader__container {
+		padding-left: 1.5em;
+	}
+	.social-container {
+		justify-content: flex-end;
+		padding-right: 4em;
+	}
 	.feature__image {
 		margin-right: 1rem;
 	}
