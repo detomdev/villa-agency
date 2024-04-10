@@ -10,8 +10,8 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-		<link rel="stylesheet" href="style-property-details.css" />
-		<title>Villa Agency - Property Details</title>
+		<link rel="stylesheet" href="style.css" />
+		<title>Villa Agency - Real Estate</title>
 	</head>
 
 	<body>
@@ -60,7 +60,7 @@
 							<li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
 							<li class="nav__item"><a href="#" class="nav__link">Properties</a></li>
 							<li class="nav__item"><a href="property-details.html" class="nav__link">Property Details</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+							<li class="nav__item"><a href="contact.html" class="nav__link">Contact us</a></li>
 							<li>
 								<button href="#" class="btn__schedule"><i class="fa fa-calendar"></i>Schedule a visit</button>
 							</li>
@@ -71,72 +71,99 @@
 		</header>
 
 		<main>
-			<section class="property__section">
-				<div class="image-container flex">
-					<h6>Home/Property</h6>
-					<h2>Property Details</h2>
-				</div>
-				<div class="property__wrapper container flex">
-					<img src="images/property-01.jpg" />
-					<div class="property-description flex">
-						<span class="property__flag">Luxury Villa</span>
-						<h8 class="card__title">18 New Street, Miami, FL 97219</h8>
-						<h6 class="card__price">$2.264.000</h6>
+			<section class="property__section container">
+				<h6>| Properties</h6>
+				<h2>We Provide the most sought after Properties</h2>
+				<div class="property__cards flex">
+					<div class="card flex">
+						<img src="images/property-01.jpg" />
+						<div class="card__header flex">
+							<span class="card__flag" id="luxury">Luxury Villa</span>
+							<h6 class="card__price">$2.264.000</h6>
+						</div>
+
+						<h4 class="card__title">18 New Street Miami, FL 97219</h4>
 						<div class="card__description">
 							Bedrooms: <span>8</span> Bathrooms: <span>8</span> Area: <span>545m2</span> Floor:
 							<span>3</span> Parking: <span>6</span>
 						</div>
-						<div class="details__container flex">
-							<h4>Additional details</h4>
-							<div class="details__p flex">
-								<p class="details-one">
-									The prime location of this turnkey property boasts a prime corner lot with excellent curb appeal and
-									ample parking. The spacious floorplan features an open-concept layout with high-end finishes
-									throughout, including gleaming hardwood floors, custom cabinetry, and stainless steel appliances.
-									Upstairs, the expansive master suite offers a luxurious en-suite bathroom and private balcony,
-									perfect for enjoying the stunning city views.
-								</p>
-								<p class="details-two">
-									Situated in a highly desirable neighborhood, this investment property presents a unique opportunity
-									for both the seasoned real estate investor and the first-time homebuyer. The property's flexible
-									zoning allows for a variety of potential uses, from a single-family residence to a multi-unit rental.
-								</p>
-							</div>
-						</div>
+						<button href="#" class="btn__schedule"><i class="fa fa-calendar"></i>Schedule a visit</button>
 					</div>
-					<aside class="flex">
-						<div class="highlight__detail flex">
-							<div class="highlight flex">
-								<img src="images/info-icon-01.png" />
-								<div>
-									<span class="flex">450 m2</span>
-									<h8>Total Flat Space</h8>
-								</div>
-							</div>
-							<div class="highlight flex">
-								<img src="images/info-icon-02.png" />
-								<div>
-									<span class="flex">Contract</span>
-									<h8>Contract ready</h8>
-								</div>
-							</div>
-							<div class="highlight flex">
-								<img src="images/info-icon-03.png" />
-								<div>
-									<span class="flex">Payment</span>
-									<h8>Payment Process</h8>
-								</div>
-							</div>
-							<div class="highlight flex">
-								<img src="images/info-icon-04.png" />
-								<div>
-									<span class="flex">Safety</span>
-									<h8>24/7 Security</h8>
-								</div>
-							</div>
+
+					<div class="card flex">
+						<img src="images/property-02.jpg" />
+						<div class="card__header flex">
+							<span class="card__flag" id="luxury">Luxury Villa</span>
+							<h6 class="card__price">$1.180.000</h6>
 						</div>
-					</aside>
-					<button href="#" class="btn__schedule"><i class="fa fa-calendar"></i>Schedule a visit</button>
+
+						<h4 class="card__title">54 Mid Street Miami, FL 97219</h4>
+						<div class="card__description">
+							Bedrooms: <span>6</span> Bathrooms: <span>5</span> Area: <span>450m2</span> Floor:
+							<span>3</span> Parking: <span>8</span>
+						</div>
+						<button href="#" class="btn__schedule"><i class="fa fa-calendar"></i>Schedule a visit</button>
+					</div>
+
+					<div class="card flex">
+						<img src="images/property-03.jpg" />
+						<div class="card__header flex">
+							<span class="card__flag" id="luxury">Luxury Villa</span>
+							<h6 class="card__price">$1.460.000</h6>
+						</div>
+
+						<h4 class="card__title">26 Old Street Miami, FL 97219</h4>
+						<div class="card__description">
+							Bedrooms: <span>5</span> Bathrooms: <span>4</span> Area: <span>225m2</span> Floor:
+							<span>3</span> Parking: <span>10</span>
+						</div>
+						<button href="#" class="btn__schedule"><i class="fa fa-calendar"></i>Schedule a visit</button>
+					</div>
+
+					<div class="card flex">
+						<img src="images/property-04.jpg" />
+						<div class="card__header flex">
+							<span class="card__flag" id="apartment">Apartment</span>
+							<h6 class="card__price">$584.500</h6>
+						</div>
+
+						<h4 class="card__title">12 New Street Miami, FL 97219</h4>
+						<div class="card__description">
+							Bedrooms: <span>4</span> Bathrooms: <span>3</span> Area: <span>125m2</span> Floor:
+							<span>25</span> Parking: <span>2</span>
+						</div>
+						<button href="#" class="btn__schedule"><i class="fa fa-calendar"></i>Schedule a visit</button>
+					</div>
+
+					<div class="card flex">
+						<img src="images/property-05.jpg" />
+						<div class="card__header flex">
+							<span class="card__flag" id="penthouse">Penthouse</span>
+							<h6 class="card__price">$925.600</h6>
+						</div>
+
+						<h4 class="card__title">34 Beach Street Miami, FL 97219</h4>
+						<div class="card__description">
+							Bedrooms: <span>4</span> Bathrooms: <span>4</span> Area: <span>180m2</span> Floor:
+							<span>38</span> Parking: <span>2</span>
+						</div>
+						<button href="#" class="btn__schedule"><i class="fa fa-calendar"></i>Schedule a visit</button>
+					</div>
+
+					<div class="card flex">
+						<img src="images/property-06.jpg" />
+						<div class="card__header flex">
+							<span class="card__flag" id="modern">Modern Condo</span>
+							<h6 class="card__price">$450.000</h6>
+						</div>
+
+						<h4 class="card__title">22 New Street Portland, OR 16540</h4>
+						<div class="card__description">
+							Bedrooms: <span>4</span> Bathrooms: <span>4</span> Area: <span>180m2</span> Floor:
+							<span>38</span> Parking: <span>2</span>
+						</div>
+						<button href="#" class="btn__schedule"><i class="fa fa-calendar"></i>Schedule a visit</button>
+					</div>
 				</div>
 			</section>
 		</main>
