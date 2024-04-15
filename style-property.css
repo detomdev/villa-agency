@@ -208,6 +208,14 @@ h8 {
 	top: 0;
 }
 
+.btn__general.active {
+	background-color: var(--clr-light);
+}
+
+.btn__general:hover {
+	background-color: var(--clr-text-gray);
+}
+
 .li__email,
 .li__map {
 	font-size: 0.75em;
