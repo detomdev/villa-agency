@@ -549,13 +549,25 @@ h1 {
 	flex-direction: column;
 }
 
-.video__section .image-container .video-frame {
+.video__section .iframe {
 	margin: 0 2em;
 	box-shadow: var(--shadow);
+	/* position: relative; */
+}
+
+.video-frame {
 	position: relative;
 }
 
-.video__section .video-frame a {
+.shadowbox {
+	width: 560px;
+	height: 315px;
+	top: 0;
+	position: absolute;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+/* .video__section .video-frame a {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -570,7 +582,7 @@ h1 {
 	color: var(--clr-light);
 	outline: 15px solid rgba(234, 81, 73, 0.5);
 	font-size: 18px;
-}
+} */
 
 .video__section .image-container img {
 	border-radius: 10px;
