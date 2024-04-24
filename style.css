@@ -356,7 +356,7 @@ a:hover {
 
 .hero span {
 	background-color: #fff;
-	color: #1e1e1e;
+	color: var(--clr-rich-black);
 	font-size: 1em;
 	font-weight: 500;
 	text-transform: capitalize;
@@ -367,7 +367,7 @@ a:hover {
 
 .hero span em {
 	font-style: normal;
-	color: #f35525;
+	color: var(--clr-light);
 }
 
 h1 {
@@ -549,21 +549,11 @@ h1 {
 	flex-direction: column;
 }
 
-.video__section .iframe {
-	margin: 0 2em;
-	box-shadow: var(--shadow);
-	/* position: relative; */
-}
-
 .video-frame {
 	position: relative;
 }
 
-.shadowbox {
-	width: 560px;
-	height: 315px;
-	top: 0;
-	position: absolute;
+.video-frame iframe {
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
 }
 
@@ -584,9 +574,9 @@ h1 {
 	font-size: 18px;
 } */
 
-.video__section .image-container img {
+/* .video__section .image-container img {
 	border-radius: 10px;
-}
+} */
 
 .video__section h2 {
 	color: #fff;
@@ -755,11 +745,11 @@ h1 {
 	text-align: left;
 }
 
-.best__deal button {
+.best__deal a {
 	margin: 2em 0;
 }
 
-.best__deal button:first-child {
+.best__deal a:first-child {
 	background-color: var(--clr-light);
 }
 
