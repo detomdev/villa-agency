@@ -228,10 +228,6 @@ h8 {
 	padding: 0;
 }
 
-/* .social-container {
-	padding-right: 1em;
-} */
-
 .home {
 	color: var(--clr-light);
 }
@@ -957,15 +953,25 @@ fieldset {
 		visibility: visible;
 	}
 
-	.social-toggle {
-		cursor: pointer;
-		border: 0;
-		width: 2em;
-		height: 2em;
-		padding: 0em;
+	.social-links li a {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background-color: #cdcdcd;
 		border-radius: 50%;
-		background: var(--clr-rich-gray);
-		color: white;
+		text-align: center;
+		line-height: 30px;
+		color: var(--clr-white);
+		font-size: 14px;
+		transition: all 0.3s;
+	}
+
+	.social-links li a:hover {
+		background-color: var(--clr-light);
+	}
+
+	.social-icon {
+		padding: 0.5rem;
 	}
 
 	.social-container {
