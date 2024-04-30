@@ -76,6 +76,8 @@ body {
 	background-color: hsl(var(--clr-white));
 	line-height: 1.5;
 	min-height: 100vh;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 /* make images easier to work with */
@@ -347,21 +349,39 @@ a:hover {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
+	margin: 0;
 }
 
-.carousel-inner {
+.carousel-inner .item {
 	display: flex;
 	transition: transform 0.5s ease-in-out;
+
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.carousel-inner .item1 {
+	background-image: url(images/banner-01.jpg);
+}
+
+.carousel-inner .item2 {
+	background-image: url(images/banner-02.jpg);
+	transform: translateX(-20px);
+}
+
+.carousel-inner .item3 {
+	background-image: url(images/banner-03.jpg);
+	transform: translateX(-30px);
 }
 
 .carousel-item {
 	flex: 0 0 100%;
 	max-width: 100%;
-}
-
-.carousel-item img {
-	width: 100%;
-	height: auto;
+	height: 90vh;
+	position: relative;
+	margin: 0;
 }
 
 .carousel-control-prev,
@@ -427,16 +447,12 @@ a:hover {
 	background-color: orange;
 }
 
-.carousel-item {
-	position: relative;
-}
-
 .carousel-item-overlay {
 	font-family: sans-serif;
 	position: absolute;
 	top: 10%;
 	left: 20%;
-	color: white;
+	color: var(--clr-white);
 	text-align: left;
 	padding-right: 20%;
 }
@@ -459,47 +475,15 @@ a:hover {
 }
 
 .carousel-item-overlay h1 {
-	font-size: 40pt;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: white;
-	line-height: 62px;
-	width: 70%;
-	margin-bottom: 0px;
-	padding: 0.375rem 0;
-}
-/* .hero {
-	background-image: url(images/banner-01.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	padding: 13.75rem 20% 20rem 20%;
-} */
-
-/* .hero span {
-	background-color: var(--clr-white);
-	color: var(--clr-rich-black);
-	font-size: 1em;
-	font-weight: 500;
-	text-transform: capitalize;
-	padding: 0.375rem 0.938rem;
-	display: inline-block;
-	margin-bottom: 30px;
-} */
-
-/* .hero span em {
-	font-style: normal;
-	color: var(--clr-light);
-} */
-
-/* h1 {
 	font-size: var(--fs-800);
 	font-weight: 700;
 	text-transform: uppercase;
 	color: var(--clr-white);
 	line-height: 62px;
+	width: 70%;
 	margin-bottom: 0px;
-} */
+	padding: 0.375rem 0;
+}
 
 /* Featured section */
 .feature__wrapper {
@@ -1062,6 +1046,10 @@ fieldset {
 /* Media queries */
 
 @media (min-width: 700px) {
+	body {
+		border: 1px solid var(--clr-rich-gray);
+	}
+
 	.nav-toggle {
 		display: none;
 	}
