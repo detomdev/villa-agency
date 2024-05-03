@@ -405,7 +405,7 @@ a:hover {
 
 .carousel-item-overlay span em {
 	font-style: normal;
-	color: orange;
+	color: var(--clr-light);
 }
 
 .carousel-item-overlay h1 {
@@ -440,7 +440,7 @@ a:hover {
 }
 
 .carousel-control-next:hover {
-	background-color: rgb(255, 165, 0);
+	background-color: var(--clr-light);
 	border-radius: 50%;
 }
 
@@ -454,7 +454,7 @@ a:hover {
 }
 
 .carousel-control-prev:hover {
-	background-color: orange;
+	background-color: var(--clr-light);
 	border-radius: 50%;
 }
 
@@ -479,7 +479,7 @@ a:hover {
 }
 
 .carousel-indicators button.active {
-	background-color: orange;
+	background-color: var(--clr-light);
 }
 
 /* Featured section */
@@ -609,6 +609,7 @@ a:hover {
 	padding: 1.5em 1em;
 	margin-top: 2em;
 	margin-bottom: 4em;
+	gap: 2em;
 }
 
 .feature img {
@@ -619,11 +620,13 @@ a:hover {
 .feature span {
 	font-size: var(--fs-500);
 	font-weight: 600;
+	padding-left: 1em;
 }
 
 .feature h8 {
 	color: var(--clr-text-gray);
 	font-size: var(--fs-400);
+	padding-left: 1em;
 }
 
 .feature {
@@ -657,6 +660,7 @@ a:hover {
 
 .video-frame iframe {
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+	width: 350px;
 }
 
 /* .video__section .video-frame a {
@@ -681,14 +685,16 @@ a:hover {
 } */
 
 .video__section h2 {
-	color: #fff;
+	color: var(--clr-white);
 }
+
 .video__section .container {
 	justify-content: center;
 }
 .facts__container {
 	flex-direction: column;
-	align-items: c;
+	align-items: center;
+	gap: 2em;
 }
 .facts__container .fact {
 	border-radius: 10px;
@@ -703,7 +709,7 @@ a:hover {
 
 .facts__container .fact span {
 	font-size: var(--fs-600);
-	color: #fff;
+	color: var(--clr-white);
 	background-color: var(--clr-light);
 	width: 4rem;
 	height: 4rem;
@@ -747,7 +753,7 @@ a:hover {
 
 .property__cards .card__flag {
 	background-color: var(--clr-light);
-	color: #fff;
+	color: var(--clr-white);
 	font-weight: 500;
 	font-size: var(--fs-300);
 	padding: 0.313rem 0.75rem;
@@ -798,7 +804,7 @@ a:hover {
 	padding: 1.5em 1em;
 	margin: 2rem auto 4em auto;
 	max-width: 360px;
-	background-color: #fff;
+	background-color: var(--clr-white);
 }
 
 .info__table ul {
@@ -845,6 +851,7 @@ a:hover {
 	line-height: 1.5;
 	color: var(--clr-rich-black);
 	text-align: left;
+	padding-bottom: 2em;
 }
 
 .best__deal a {
@@ -884,7 +891,7 @@ section > .container {
 .contact-section h2 {
 	font-weight: 600;
 	position: absolute;
-	color: #fff;
+	color: var(--clr-white);
 	top: 1.75em;
 	padding: 0 1em;
 }
@@ -928,7 +935,7 @@ fieldset {
 	box-shadow: var(--shadow);
 	padding: 0.5rem 2em;
 	width: 100%;
-	background-color: #fff;
+	background-color: var(--clr-white);
 	align-items: center;
 	justify-content: center;
 	max-width: 24rem;
@@ -941,6 +948,11 @@ fieldset {
 .contact__content > img {
 	width: 3rem;
 	height: auto;
+	padding-right: 1em;
+}
+
+.icon-container img {
+	padding-right: 1em;
 }
 
 .contact__content #contact-form {
@@ -949,7 +961,7 @@ fieldset {
 	border-radius: 10px;
 	box-shadow: var(--shadow);
 	padding: 2rem 1.875rem;
-	background-color: #fff;
+	background-color: var(--clr-white);
 	flex-direction: column;
 	max-width: 24rem;
 	z-index: 98;
@@ -965,7 +977,7 @@ fieldset {
 	width: 100%;
 	height: 2.5em;
 	border-radius: 5px;
-	background-color: #f6f6f6;
+	background-color: var(--clr-rich-gray);
 	border: none;
 	margin-bottom: 1.875rem;
 	font-size: var(--fs-300);
@@ -977,11 +989,15 @@ fieldset {
 	height: auto;
 	max-height: 11.25rem;
 	border-radius: 5px;
-	background-color: #f6f6f6;
+	background-color: var(--clr-rich-gray);
 	border: none;
 	margin-bottom: 2.5rem;
 	font-size: var(--fs-300);
 	padding: 0.938rem;
+}
+
+#contact-form ::placeholder {
+	color: var(--clr-text-gray);
 }
 
 /* Footer section */
@@ -990,7 +1006,7 @@ fieldset {
 	justify-content: center;
 	background-color: var(--clr-rich-black);
 	text-align: center;
-	color: white;
+	color: var(--clr-white);
 	padding: 2em;
 }
 
@@ -1003,7 +1019,7 @@ fieldset {
 }
 
 .comp-logo-white {
-	color: white;
+	color: var(--clr-white);
 	font-size: var(--fs-700);
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -1011,7 +1027,7 @@ fieldset {
 }
 
 .footer__section ul li p {
-	color: white;
+	color: var(--clr-white);
 	font-size: var(--fs-200);
 	line-height: 1.5;
 	padding: 0;
@@ -1038,11 +1054,24 @@ fieldset {
 	border: 0;
 	padding-left: 1em;
 	background-color: transparent;
-	color: white;
+	color: var(--clr-white);
 }
 /* Media queries */
 
 @media (min-width: 700px) {
+	header {
+		position: fixed;
+		z-index: 1000;
+		background-color: var(--clr-white);
+		width: 100%;
+		border-bottom: 2px solid var(--clr-rich-gray);
+		filter: drop-shadow(0px 1px 5px var(--clr-rich-black));
+	}
+
+	main {
+		padding-top: 110px;
+	}
+
 	body {
 		border: 1px solid var(--clr-rich-gray);
 	}
@@ -1059,15 +1088,19 @@ fieldset {
 		align-items: center;
 		padding: 0.625rem 0;
 		padding-left: 1.5em;
-
 		visibility: visible;
+		background-color: var(--clr-white);
+	}
+
+	.subheader__container .li__map {
+		margin-left: 1em;
 	}
 
 	.social-links li a {
 		display: inline-block;
 		width: 30px;
 		height: 30px;
-		background-color: #cdcdcd;
+		background-color: var(--clr-rich-gray);
 		border-radius: 50%;
 		text-align: center;
 		line-height: 30px;
@@ -1182,17 +1215,19 @@ fieldset {
 		text-align: center;
 		border: 0;
 		margin: 0;
-		padding: 0;
+		padding: 0 1em;
 	}
 
 	.feature span {
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 0.5em;
+		padding: 0;
 	}
 
 	.feature h8 {
 		line-height: 1;
+		padding: 0;
 	}
 
 	/* Video section */
@@ -1200,6 +1235,7 @@ fieldset {
 		margin: 0 auto;
 		justify-content: center;
 	}
+
 	.facts__container {
 		flex-direction: row;
 		justify-content: space-between;
@@ -1222,11 +1258,15 @@ fieldset {
 
 	.facts__container .fact span {
 		font-size: var(--fs-600);
-		color: #fff;
+		color: var(--clr-white);
 		width: 4rem;
 		height: 4rem;
 		left: -30px;
 		bottom: 25px;
+	}
+
+	.video-frame iframe {
+		width: 560px;
 	}
 
 	/* Best deal section */
@@ -1236,6 +1276,7 @@ fieldset {
 
 	.deal__btn-container {
 		justify-content: center;
+		gap: 2em;
 	}
 
 	.deal__container {
@@ -1244,6 +1285,7 @@ fieldset {
 		align-items: flex-start;
 		flex-wrap: wrap;
 		margin-top: 2rem;
+		gap: 2em;
 	}
 
 	.deal__image {
@@ -1277,6 +1319,7 @@ fieldset {
 	.details__p {
 		flex-direction: row;
 		justify-content: flex-start;
+		gap: 2em;
 	}
 
 	.details-one {
@@ -1295,6 +1338,7 @@ fieldset {
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
+		gap: 2em;
 	}
 
 	/* Contact section */
@@ -1306,6 +1350,7 @@ fieldset {
 		grid-template-areas:
 			"map form"
 			"cta cta";
+		grid-gap: 2em;
 	}
 
 	.contact__content .google-map {
